@@ -1,7 +1,7 @@
 'use client';
 
 import { useStoreModel } from '@/hooks/use-store-model';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const SetupPage = () => {
 	const onOpen = useStoreModel((state) => state.onOpen);
@@ -13,7 +13,7 @@ const SetupPage = () => {
 		}
 	}, [isOpen, onOpen]);
 
-	return <div className="p-4">Root page</div>;
+	return null;
 };
 
 export default SetupPage;
